@@ -25,7 +25,7 @@
 
 1.  **Initialize Cloudflare Project:**
     *   Login to Cloudflare via Wrangler (if not already).
-    *   Create a new Pages project named `reincarnated-store`.
+    *   Create a new Pages project named `reincarnated-store-nextjs`.
 
 2.  **Configure Build Settings:**
     *   Framework Preset: Next.js (Static HTML Export) OR Next.js (Standard) depending on adapter availability.
