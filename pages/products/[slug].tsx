@@ -8,13 +8,17 @@ export async function getStaticPaths() {
     params: { slug: product.slug }, // slug is now the SKU
   }));
 
-  return { paths, fallback: true };
+  return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }: { params: { slug: string } }) {
   const products = getProducts();
   // Find product by SKU (which is now mapped to slug)
   const product = products.find((p) => p.slug === params.slug);
+
+  if (!product) {
+    return { notFound: true };
+  }
 
   return {
     props: {

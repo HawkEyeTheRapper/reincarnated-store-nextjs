@@ -1,6 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { mockProducts } from '../../utils/products';
+import products from '../../utils/products.json';
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  res.status(200).json(mockProducts);
+  res.status(200).json(products);
 }
+
+export const config = {
+  runtime: 'edge',
+};
