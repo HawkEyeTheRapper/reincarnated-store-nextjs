@@ -1,0 +1,30 @@
+{
+  "version": 3,
+  "middleware": {},
+  "functions": {
+    "/api/checkout_sessions": {
+      "files": [
+        "server/edge-runtime-webpack.js",
+        "server/pages/api/checkout_sessions.js"
+      ],
+      "name": "pages/api/checkout_sessions",
+      "page": "/api/checkout_sessions",
+      "matchers": [
+        {
+          "regexp": "^/api/checkout_sessions$",
+          "originalSource": "/api/checkout_sessions"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "AeJgg3tCHbpKcinNzVIQy01KJ3rAK+q8mtlyOy+7xuU=",
+        "__NEXT_PREVIEW_MODE_ID": "351f848dbf06494ce7313b109b3f10ee",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "1a619f892978f819207e3c750991c2f5d3ee0f0466a37d268a04583a5de653bb",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "fa1bd89281689783fe44767545e3a993f462f811538bbe965481b03a9a675a51"
+      }
+    }
+  },
+  "sortedMiddleware": []
+}

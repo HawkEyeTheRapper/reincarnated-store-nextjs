@@ -6,13 +6,6 @@
 # Testing
 /coverage
 
-# Next.js
-/.next/
-/out/
-
-# Production
-/build
-
 # Misc
 .DS_Store
 *.pem
@@ -31,10 +24,6 @@ yarn-error.log*
 # Media (sourced externally)
 /public/assets/audio/
 *.mp3
-
-# TypeScript
-*.tsbuildinfo
-next-env.d.ts
 
 # Python/Venv (if applicable)
 .venv
