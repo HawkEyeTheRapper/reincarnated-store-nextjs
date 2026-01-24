@@ -5,7 +5,7 @@ import { getProducts, Product } from '../../utils/products';
 export async function getStaticPaths() {
   const products = getProducts();
   const paths = products.map((product) => ({
-    params: { slug: product.slug },
+    params: { slug: product.slug }, // slug is now the SKU
   }));
 
   return { paths, fallback: true };
@@ -13,6 +13,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }: { params: { slug: string } }) {
   const products = getProducts();
+  // Find product by SKU (which is now mapped to slug)
   const product = products.find((p) => p.slug === params.slug);
 
   return {

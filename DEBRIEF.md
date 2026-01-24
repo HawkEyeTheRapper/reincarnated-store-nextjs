@@ -19,6 +19,7 @@
     *   **Source:** `utils/products.csv` (Apparel & Merch focus).
     *   **Ingestion:** Created `utils/products.ts` to parse CSV at runtime/build-time.
     *   **Filtering:** Automatically filters for Apparel/Merch based on SKU prefixes (`HE-`, `OM-`, `R2R-`) or Category.
+    *   **URL Mapping:** Updated `utils/products.ts` to use **SKU** as the `slug`. URLs are now `/products/HE-001` instead of `/products/hawk-vision-t-shirt`.
     *   **Display:** 
         *   `pages/products.tsx`: Grid view with image placeholders.
         *   `pages/products/[slug].tsx`: Detail view with support for Audio/Lyrics (if present in data).
