@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['reincarnated.store', 'assets.omniversalmedia.shop', 'assets.omniversalmedia.vip'],
+    domains: ['hawkeyetherapper.shop', 'shop.omniversal.vip', 'assets.omniversal.vip'],
   },
 };
 
